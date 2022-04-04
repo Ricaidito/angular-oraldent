@@ -1,0 +1,41 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <ul class="navbar-nav row">
+      <li class="col">
+        <img [src]="'./assets/odl2.png'" alt="img-logo" class="nav-logo" />
+      </li>
+      <li class="nav-item col">
+        <a
+          routerLink="/summary"
+          routerLinkActive="active"
+          class="nav-link active"
+          >Oraldent</a
+        >
+      </li>
+      <li class="nav-item col">
+        <a routerLink="/ventas" routerLinkActive="active" class="nav-link"
+          >Ventas</a
+        >
+      </li>
+      <li class="nav-item col">
+        <a routerLink="/inventario" routerLinkActive="active" class="nav-link"
+          >Inventario</a
+        >
+      </li>
+      <li class="nav-item col">
+        <a routerLink="/consultas" routerLinkActive="active" class="nav-link"
+          >Gestión de consultoría</a
+        >
+      </li>
+      <li class="nav-item col">
+        <a routerLink="/facturacion" routerLinkActive="active" class="nav-link"
+          >Facturación</a
+        >
+      </li>
+      <li class="nav-item col"><a class="nav-link" id="red-exit">Salir</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- Router for the navbar links -->
+<router-outlet></router-outlet>

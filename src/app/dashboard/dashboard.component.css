@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #6cc9ff !important;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.nav-link {
+  color: #1a132f !important;
+  font-size: 18px !important;
+  text-decoration: none !important;
+  text-align: center !important;
+}
+
+.nav-logo {
+  width: 100px;
+  height: 100px;
+}
+
+#red-exit {
+  color: #ff1818 !important;
+}

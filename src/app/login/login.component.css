@@ -1,0 +1,28 @@
+* {
+  background-color: #6cc9ff;
+}
+
+button {
+  background-color: black;
+}
+
+label {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.img-logo {
+  width: 24%;
+  height: 24%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 25%;
+  margin: auto;
+}
+
+.input-box:focus {
+  background-color: #6cc9ff;
+}

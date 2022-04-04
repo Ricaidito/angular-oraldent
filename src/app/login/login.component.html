@@ -1,0 +1,42 @@
+<!-- If the user is not logged in, render the login form -->
+<div
+  *ngIf="!isLogged; else elseBlock"
+  class="container text-center mt-5 border border-dark rounded shadow-lg"
+>
+  <!-- Login form -->
+  <form>
+    <!-- Image -->
+    <div class="for-outline mt-4">
+      <img [src]="'./assets/odl1.png'" alt="img-logo" class="img-logo" />
+    </div>
+    <!-- Form info and labels -->
+    <div class="form-outline mb-4">
+      <h1>¡Bienvenido!</h1>
+      <h3>Inicia sesión para continuar</h3>
+      <label for="email" class="form-label my-1">Correo electrónico:</label>
+      <input
+        type="email"
+        class="form-control text-center input-box border border-dark"
+        placeholder="Ingrese su correo electrónico..."
+        [(ngModel)]="email"
+        name="email"
+      />
+      <label for="password" class="form-label my-1">Contraseña:</label>
+      <input
+        type="password"
+        class="form-control text-center input-box border border-dark"
+        placeholder="Ingrese su contraseña..."
+        [(ngModel)]="password"
+        name="password"
+      />
+    </div>
+    <!-- Submit button -->
+    <button type="button" class="btn btn-dark btn-block mb-4" (click)="logIn()">
+      Iniciar sesión
+    </button>
+  </form>
+</div>
+<!-- If the user is logged, render the dashboard -->
+<ng-template #elseBlock>
+  <app-dashboard></app-dashboard>
+</ng-template>
