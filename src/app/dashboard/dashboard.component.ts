@@ -9,4 +9,8 @@ export class DashboardComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  handleLogOut(): void {
+    window.location.reload();
+  }
 }
